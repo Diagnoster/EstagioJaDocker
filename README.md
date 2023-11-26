@@ -39,7 +39,7 @@ Abaixo seguem as instruções de instalação, assim como o nome dos autores.
 **IMPORTANTE: NÃO CLONAR O REPOSITÓRIO EM DIRETÓRIOS DO ONE DRIVE, DROPBOX OU SEMELHANTES**
 - Essa é a melhor forma de rodar as aplicações localmente, seguem instruções abaixo:
 
-1.**Instalar o Docker**
+1. **Instalar o Docker**
 - Instale o Docker Desktop (recomendado): https://www.docker.com/products/docker-desktop/
 - Ou o docker engine: https://docs.docker.com/engine/install/
 - Se optar pelo Engine, é necessário instalar o docker-compose: https://docs.docker.com/compose/install/linux/#install-using-the-repository
@@ -58,7 +58,7 @@ Abaixo seguem as instruções de instalação, assim como o nome dos autores.
 
 - Após concluído, fechar o terminal e reabrir para recarregar as variáveis de ambiente.
 
-4.**Executar script de inicialização**
+4. **Executar script de inicialização**
 **Os scripts de inicialização estão na raíz do projeto**
 
 - Linux/Mac: Executar o script:
@@ -73,12 +73,12 @@ Abaixo seguem as instruções de instalação, assim como o nome dos autores.
    ```bash
   .\start-windows.bat
 
-5.**Testar os conteineres**
+5. **Testar os conteineres**
 - WebSite estará disponível e pronto para cadastros em: http://localhost:4200/
 - API estará disponível em: http://localhost:8080/ (ou http://localhost:8080/index.html para exibir o status "up")
 
   
-6.**Banco de dados** 
+6. **Banco de dados** 
 - O banco de dados estará disponível em: http://localhost:5433/ (pode ser visualizado via [dbeaver](https://dbeaver.io/download/), [pgadmin](https://www.pgadmin.org/download/) ou similares. usuario: estagioja; senha: estagioja; banco: estagioja; schema: public)
 - Por padrão não haverá dados no banco, quando todos os conteineres estiverem rodando, execute o script contido no arquivo [db/start-db.sql](db/start-db.sql) em uma ferramenta como as citadas acima.
 
