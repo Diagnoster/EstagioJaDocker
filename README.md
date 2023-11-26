@@ -56,7 +56,7 @@ Abaixo seguem as instruções de instalação, assim como o nome dos autores.
 - API estará disponível em: http://localhost:8080/ (ou http://localhost:8080/index.html para exibir o status "up")
 - O banco de dados estará disponível em: http://localhost:5433/ (pode ser visualizado via dbeaver, pgadmin ou similares, usando usuario: estagioja e senha: estagioja)
 
-6**Rodando o app mobile**
+6.**Rodando o app mobile**
 - O APK pode ser baixado da release 1.0 desse repositório, através de seu smartphone Android.
 - O app utiliza os serviços do postgres em nuvem, sendo necessário criar uma conta de estudante no [Website EstágioJá](https://estagioja-070ef3605940.herokuapp.com/cadastrar)
 - Após a criação o login pode ser feito no app utilizando as credênciais cadastradas.
