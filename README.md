@@ -79,8 +79,8 @@ Abaixo seguem as instruções de instalação, assim como o nome dos autores.
 
   
 6.**Banco de dados** 
-- O banco de dados estará disponível em: http://localhost:5433/ (pode ser visualizado via dbeaver, pgadmin ou similares. usuario: estagioja; senha: estagioja; banco: estagioja; schema: public)
-- Por padrão não haverá dados no banco, execute o script contido no arquivo [db/start-db.sql](db/start-db.sql) em uma ferramenta como as citadas acima.
+- O banco de dados estará disponível em: http://localhost:5433/ (pode ser visualizado via [dbeaver](https://dbeaver.io/download/), [pgadmin](https://www.pgadmin.org/download/) ou similares. usuario: estagioja; senha: estagioja; banco: estagioja; schema: public)
+- Por padrão não haverá dados no banco, quando todos os conteineres estiverem rodando, execute o script contido no arquivo [db/start-db.sql](db/start-db.sql) em uma ferramenta como as citadas acima.
 
 7.**Rodando o app mobile**
 - O APK pode ser baixado da release 1.0 desse repositório, através de seu smartphone Android.
