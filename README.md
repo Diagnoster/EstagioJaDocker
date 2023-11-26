@@ -43,6 +43,10 @@ Abaixo seguem as instruções de instalação, assim como o nome dos autores.
 - Instale o Docker Desktop (recomendado): https://www.docker.com/products/docker-desktop/
 - Ou o docker engine: https://docs.docker.com/engine/install/
 - Se optar pelo Engine, é necessário instalar o docker-compose: https://docs.docker.com/compose/install/linux/#install-using-the-repository
+- Após consluída a instalação, inicie o docker desktop ou, se não estiver utilizando a versão desktop, utilize um dos comandos abaixo:
+  ```bash
+  sudo service docker start
+  sudo systemctl start docker
 
 2. **Instalar NPM e Node.js**
 - Siga os passos em https://docs.npmjs.com/downloading-and-installing-node-js-and-npm de acordo com seu sistema operacional
