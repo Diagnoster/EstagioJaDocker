@@ -1,0 +1,27 @@
+INSERT INTO public.tb_frases_empresa
+(texto_frase)
+values
+('Comunique-se abertamente com sua equipe para construir confiança.'),
+('Crie um ambiente inclusivo onde todas as vozes são ouvidas.'),
+('Investir em treinamento contínuo beneficia a equipe e a empresa.'),
+('Promova um equilíbrio saudável entre trabalho e vida pessoal.'),
+('Reconheça e celebre as conquistas da equipe regularmente.'),
+('Feedback construtivo ajuda a equipe a crescer e se desenvolver.'),
+('Estimule a colaboração e troca de ideias entre os membros da equipe.'),
+('Priorize a saúde mental e o bem-estar dos funcionários.'),
+('Líderes empáticos inspiram e motivam suas equipes.'),
+('Inovação é chave para se destacar no mercado em constante mudança.'),
+('Ações sociais fortalecem a empresa e a comunidade ao seu redor.'),
+('Esteja atualizado com as últimas tendências do setor para se manter competitivo.'),
+('Fomente uma cultura que valorize a resiliência diante de desafios.'),
+('Promova um ambiente seguro e inclusivo para todos os funcionários.'),
+('Ética nos negócios constrói relações sólidas e duradouras.'),
+('Estimule a inovação ao permitir que os funcionários compartilhem ideias livremente.'),
+('Promova uma cultura de aprendizado contínuo para desenvolver habilidades da equipe.'),
+('Incentive a autonomia, permitindo que os funcionários tomem decisões e assumam responsabilidades.'),
+('Valorize a diversidade de pensamento; diferentes perspectivas levam a soluções inovadoras.'),
+('Estabeleça metas claras e mensuráveis para manter a equipe focada e motivada.'),
+('Encoraje a flexibilidade, permitindo horários de trabalho adaptáveis quando possível.'),
+('Apoie iniciativas e projetos sociais na comunidade para contribuir positivamente.'),
+('Reconheça e recompense o esforço e dedicação dos funcionários regularmente.'),
+('Mantenha um ambiente de trabalho limpo, organizado e acolhedor para todos os colaboradores.');

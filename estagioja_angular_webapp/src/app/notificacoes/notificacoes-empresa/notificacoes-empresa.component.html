@@ -1,0 +1,16 @@
+<div class="main-title">
+    <h2 class="notification-title">Minhas Notificações</h2>
+</div>
+<div class="container">
+    <div class="notification" *ngFor="let not of notificacoes">
+        <div class="notification-info">
+            <div class="notification-details">
+                <mat-list>
+                    <mat-list-item>
+                        <b><span class="aplicant-name">{{ not.mensagem }}</span></b>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+        </div>
+    </div>
+</div>

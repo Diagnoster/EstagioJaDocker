@@ -1,0 +1,6 @@
+enum PerfilAcesso {
+
+  estudante,
+  empresa
+
+}

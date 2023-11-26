@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstagioJaAPI", "EstagioJaAPI.csproj", "{8D0ADCD7-BD81-4A0C-93C5-FDEA7EC44DD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{AFE3802E-2830-41FF-ABB9-53558E85E02E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D0ADCD7-BD81-4A0C-93C5-FDEA7EC44DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0ADCD7-BD81-4A0C-93C5-FDEA7EC44DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0ADCD7-BD81-4A0C-93C5-FDEA7EC44DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0ADCD7-BD81-4A0C-93C5-FDEA7EC44DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3992AE7F-9C7A-4114-BD08-3AC7774BB831}
+	EndGlobalSection
+EndGlobal

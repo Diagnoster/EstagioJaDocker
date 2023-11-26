@@ -1,0 +1,44 @@
+<div class="container-search">
+  <p class="text vacancies" (click)="ativarVisualizarMinhasVagas()" [ngClass]="{'active': minhasVagasAtivo}">Minhas Vagas</p>
+  <p class="text recommendations" (click)="ativarVisualizarRecomendacoes()" [ngClass]="{'active': recomendacoesAtivo}">Recomendações</p>
+  <div class="custom-input">
+      <input id="search" class="input-field" placeholder="  Desenvolvedor .NET" (keyup)="pesquisarVaga()">
+      <mat-icon class="icon" (click)="limparPesquisa()">clear</mat-icon>
+  </div>
+</div>
+<div class="container" [hidden]="!minhasVagasAtivo">
+  <span class="title">Candidaturas</span>
+  <div class="vaga" *ngFor="let vaga of minhasVagas; let i = index" [hidden]="vaga.status === 'FINALIZADO'">
+      <div class="vaga-info">
+          <div class="vaga-imagem">
+              <img class="img-vaga" [src]="fotoAbertasURLs[i]" alt="Imagem da Vaga">
+          </div>
+          <div class="vaga-detalhes">
+              <div class="vaga-info" fxLayout="column">
+                  <h1>{{ vaga.titulo }} <span class="span-aprovado">{{ carregarAprovacaoVaga(vaga) }}</span></h1>
+                  <h4>{{ vaga.nomeEmpresa }}</h4>
+              </div>
+              <mat-icon class="icone" (click)="visualizarVaga(vaga.id!)">open_in_new</mat-icon>
+              <button mat-button class="button vermelho btn-danger" (click)="confirmarDesistirDaVaga(vaga.id!)" color="warn" [hidden]="vaga.status === 'CONCLUIDO'">Desistir</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container" [hidden]="!recomendacoesAtivo">
+<span class="title">Vagas Recomendadas</span>
+<div class="vaga" *ngFor="let vaga of vagasRecomendadas; let i = index">
+    <div class="vaga-info">
+        <div class="vaga-imagem">
+            <img class="img-vaga" [src]="fotosRecomendadasURLs[i]" alt="Imagem da Vaga">
+        </div>
+        <div class="vaga-detalhes">
+            <div fxLayout="column">
+                <h1>{{ vaga.titulo }}</h1>
+                <h4>{{ vaga.nomeEmpresa }}</h4>
+            </div>
+            <mat-icon class="icone" (click)="visualizarVaga(vaga.id!)">open_in_new</mat-icon>
+            <button mat-button (click)="candidatar(vaga.id!)" class="button roxo btn-approve" color="warn">Candidatar</button>
+        </div>
+    </div>
+</div>
+</div>

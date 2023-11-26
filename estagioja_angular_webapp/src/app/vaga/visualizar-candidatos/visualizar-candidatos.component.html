@@ -1,0 +1,41 @@
+<div class="main-title">
+    <mat-icon (click)="voltar()" class="mat-primary custom-button-2" aria-hidden="false" aria-label="keyboard_return"
+        fontIcon="keyboard_return"></mat-icon>
+    <h2 class="internship">Visualizar Candidatos</h2>
+</div>
+<div class="container">
+    <h1 class="title">Candidatos</h1>
+    <div class="vaga" *ngFor="let candidato of candidatos; let i = index">
+        <div class="vaga-info">
+            <div class="vaga-imagem">
+                <img class="img-vaga" [src]="linksFotos[i]" alt="Imagem da Vaga" />
+            </div>
+            <div class="vaga-detalhes">
+                <mat-list>
+                    <mat-list-item>
+                        <h2 class="aplicant-name">{{ candidato.nome }}</h2>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <p class="aplicant-info">
+                            {{ candidato.endereco.localidade }} - {{ candidato.endereco.uf }},
+                            {{ calcularIdade(candidato.dataDeNascimento) }}
+                        </p>
+                    </mat-list-item>
+                </mat-list>
+                <div class="buttons">
+                    <button mat-button class="mat-primary button roxo btn-show-aplicants" (click)="baixarCurriculo(candidato)" color="warn">
+                        Baixar Curriculo
+                    </button>
+                    <button mat-button class="mat-primary button verde btn-approve" color="warn"
+                        (click)="aprovarCandidato(candidato.id)" [hidden]="vaga.status !== 'ABERTO'">
+                        Aprovar
+                    </button>
+                    <button mat-button class="mat-primary button vermelho btn-reject" color="warn"
+                        (click)="rejeitarCandidato(candidato.id)" [hidden]="vaga.status !== 'ABERTO'">
+                        Rejeitar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

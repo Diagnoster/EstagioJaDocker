@@ -1,0 +1,284 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.content {
+    width: 910px;
+    height: 775px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 910px;
+    height: 66px;
+    background-color: #6638B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.register {
+    color: #ffffff;
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+.register-box {
+    padding-left: 12px;
+    padding-top: 10px;
+    width: 866px;
+    height: auto;
+    background-color: #F7F2FA;
+    border-radius: 10px;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mat-input-element-branch {
+    width: 58%;
+    padding-right: 28px;
+    padding-left: 14px;
+}
+
+.mat-input-element-phone {
+    width: 34%;
+    padding-right: 23px;
+    padding-left: 5px;
+}
+
+.mat-input-element-cep {
+    width: 20%;
+    padding-right: 25px;
+    padding-left: 13px;
+}
+
+.mat-input-element-city {
+    width: 30%;
+    padding-right: 15px;
+}
+
+.mat-input-element-description {
+    padding-left: 14px;
+    width: 96%;
+}
+
+.mat-input-element-state {
+    padding-left: 14px;
+    padding-right: 25px;
+    width: 12%;
+}
+
+.mat-input-element-neighborhood {
+    width: 27%;
+    padding-right: 22px;
+}
+
+.mat-input-element-number {
+    width: 15%;
+    padding-right: 22px;
+}
+
+.mat-input-element-address {
+    width: 35%;
+    padding-right: 35px;
+    padding-left: 13px;
+}
+
+.mat-input-element-complement {
+    padding-left: 14px;
+    width: 38%;
+    padding-right: 22px;
+}
+
+.mat-input-element-mod {
+    width: 22%;
+    padding-right: 22px;
+}
+
+.custom-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #6638B5;
+    color: white !important;
+    border-radius: 100px;
+    padding: 20px;
+    width: 120px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.custom-button-2 {
+    position: absolute;
+    bottom: 0;
+    right: 1;
+    color: black !important;
+    border-radius: 100px;
+    margin-right: 20px;
+    padding: 20px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+.img-perfil {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.info-text {
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+::ng-deep mat-list mat-list-item {
+    margin: -7%;
+}
+
+.custom-button-3 {
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  background-color: #6638B5;
+  color: white !important;
+  border-radius: 100px;
+  padding: 20px;
+  width: 120px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+}
+
+.img-perfil {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.mat-input-element-picture {
+  padding-left: 15px;
+  width: 350px;
+}
+
+/* Quando ajustado a janela do browser, dinamicamente troca os valores das classes */
+@media (max-width: 920px) {
+    .content {
+        width: 90%;
+        max-width: 500px;
+        top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .register {
+        color: #ffffff;
+        font-size: 28px;
+        padding-top: 15px;
+    }
+
+    .register-box {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .profile-type {
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 25px;
+    }
+
+    .mat-input-element-description,
+    .mat-input-element-phone,
+    .mat-input-element-address,
+    .mat-input-element-complement,
+    .mat-input-element-email,
+    .mat-input-element-number,
+    .mat-input-element-picture {
+        width: 99%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .mat-input-element-phone
+    {
+        width: 35%;
+        padding-left: 0;
+    }
+
+    .mat-input-element-branch {
+        width: 60%;
+        padding-left: 0;
+        padding-right: 1em;
+    }
+
+    .mat-input-element-cep {
+        width: 7em;
+        padding-left: 3px;
+        padding-right: 2px;
+    }
+
+    .mat-input-element-state {
+        width: 4em;
+        padding-left: 0;
+        padding-right: 2px;
+        font-size: 14px;
+    }
+
+    .mat-input-element-city {
+        width: 7em;
+        padding-left: 0;
+        padding-right: 2px;
+    }
+
+    .mat-input-element-neighborhood {
+        width: 10em;
+        padding-right: 0;
+    }
+
+    .mat-input-element-address,
+    .mat-input-element-number,
+    .mat-input-element-complement {
+        padding-right: 2px;
+        font-size: 15px;
+    }
+
+    .mat-input-element-number {
+        width: 30%;
+    }
+
+    mat-list-item span {
+        font-size: 10px;
+    }
+
+    b {
+        font-size: 10px;
+    }
+
+    .img-perfil {
+        height: 75px;
+        width: 75px;
+    }
+    
+}

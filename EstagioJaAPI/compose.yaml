@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_DB: estagioja
+      POSTGRES_USER: estagioja
+      POSTGRES_PASSWORD: estagioja
+    ports:
+      - "5433:5432"
+

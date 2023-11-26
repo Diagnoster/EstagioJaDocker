@@ -1,0 +1,21 @@
+<app-links-perfil></app-links-perfil>
+<app-links-uteis></app-links-uteis>
+<div class="container">
+    <h1 class="title">Últimas vagas cadastradas</h1>
+    <div class="vaga" *ngFor="let vaga of vagasAbertas">
+      <div class="vaga-info">
+          <div class="vaga-imagem">
+              <img class="img-vaga" [src]="fotoURL" alt="Imagem da Vaga">
+          </div>
+          <div class="vaga-detalhes">
+              <div>
+                  <h1>{{ vaga.titulo }}</h1>
+                  <h4>{{ vaga.nomeEmpresa }}</h4>
+              </div>
+              <mat-icon class="icone" (click)="visualizarVaga(vaga.id!)">open_in_new</mat-icon>
+              <button class="button roxo btn-approve" color="warn" mat-button (click)="exibirCandidatos(vaga.id!)">Exibir Candidatos</button>
+              <button class="button vermelho btn-danger" color="warn" mat-button (click)="confirmarFinalizarVaga(vaga.id!)">Finalizar</button>
+          </div>
+      </div>
+  </div>
+</div>
