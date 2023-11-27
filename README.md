@@ -82,7 +82,7 @@ Abaixo seguem as instruções de instalação, assim como o nome dos autores.
 - O banco de dados estará disponível em: http://localhost:5433/ (pode ser visualizado via [dbeaver](https://dbeaver.io/download/), [pgadmin](https://www.pgadmin.org/download/) ou similares. usuario: estagioja; senha: estagioja; banco: estagioja; schema: public)
 - Por padrão não haverá dados no banco, quando todos os conteineres estiverem rodando, execute o script contido no arquivo [db/start-db.sql](db/start-db.sql) em uma ferramenta como as citadas acima.
 
-7.**Rodando o app mobile**
+7. **Rodando o app mobile**
 - O APK pode ser baixado da release [1.0](https://github.com/lucasfrison/EstagioJaDocker/releases/tag/1.0) desse repositório, através de seu smartphone Android.
 - O app utiliza os serviços do postgres em nuvem, sendo necessário criar uma conta de estudante no [Website EstágioJá](https://estagioja-070ef3605940.herokuapp.com/cadastrar)
 - Após a criação o login pode ser feito no app utilizando as credênciais cadastradas.
