@@ -59,7 +59,7 @@ Abaixo seguem as instruções de instalação, assim como o nome dos autores.
 - Após concluído, fechar o terminal e reabrir para recarregar as variáveis de ambiente.
 
 4. **Executar script de inicialização**
-**Os scripts de inicialização estão na raíz do projeto**
+**(Os scripts de inicialização estão na raíz do projeto)**
 
 - Linux/Mac: Executar o script:
   ```bash
